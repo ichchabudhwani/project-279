@@ -1,0 +1,83 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.19470807540479368 -0.6437799975921247 0.7400243780257818 5.507238959767963
+  position -3.487511625669665 7.622861267589448 7.8463314838066385
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0.43 1.05 0
+  floorSize 3 3
+  floorTileSize 2 2
+}
+DEF plane Transform {
+  translation 5 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.621333 0.264 1
+        roughness 0.2
+        metalness 0
+      }
+      geometry Plane {
+        size 0.6 0.6
+      }
+    }
+  ]
+}
+DEF sphere Transform {
+  translation 7 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.8 0.264 0.621333
+        roughness 0.2
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.3
+        subdivision 2
+      }
+    }
+  ]
+}
+DEF cuboid Transform {
+  translation 9 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.8 0.5 0.099
+        roughness 0.2
+        metalness 0
+      }
+      geometry Box {
+        size 0.6 0.6 0.6
+      }
+    }
+  ]
+}
+DEF capsule Transform {
+  translation 11 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.098 0.88 0.999
+        roughness 0.2
+        metalness 0
+      }
+      geometry Capsule {
+        height 0.5
+        radius 0.2
+      }
+    }
+  ]
+}
